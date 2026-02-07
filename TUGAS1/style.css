@@ -82,23 +82,16 @@ h1, h2, h3 {
   width: 320px;
   filter: drop-shadow(0 30px 45px rgba(2, 0, 27, 0.79));
 }
-.hero-text {
-  max-width: 460px;
-}
+.hero-text {max-width: 460px;}
 .hero-text h1 {
   font-size: 52px;
   line-height: 1.2;
   margin-bottom: 15px;
 }
-.hero-text p {
-  font-size: 18px;
-  opacity: 0.85;
-}
+.hero-text p {font-size: 18px;opacity: 0.85;}
 
 /*SOCIAL ICON*/
-.social {
-  margin-top: 25px;
-}
+.social {margin-top: 25px;}
 .social a {
   width: 48px;
   height: 48px;
@@ -111,12 +104,8 @@ h1, h2, h3 {
   margin-right: 15px;
   transition: 0.3s;
 }
-.social .ig {
-  background: var(--primary)
-}
-.social .wa {
-  background:var(--primary)
-}
+.social .ig {background: var(--primary)}
+.social .wa {background:var(--primary)}
 .social a:hover {
   transform: scale(1.15);
   background-color: var(--accent);
@@ -130,12 +119,7 @@ h1, h2, h3 {
   scroll-margin-top:100px;
   min-height: 100vh;
 }
-.section h2 {
-  font-size: 36px;
-}
-.dark {
-  background: var(--secondary);
-}
+.section h2 {font-size: 36px;}
 
 /* ABOUT */
 #about {
@@ -179,13 +163,6 @@ h1, h2, h3 {
   margin-bottom: 10px;
 }
 
-
-.about-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
-}
-
-
 /* LABEL */
 .about-card .label {
   color: var(--accent);
@@ -194,17 +171,8 @@ h1, h2, h3 {
 }
 
 /* ISI */
-.about-card p {
-  font-size: 18px;
-  font-weight: 500;
-}
+.about-card p {font-size: 18px;font-weight: 500;}
 
-/* MOBILE */
-@media (max-width: 768px) {
-  .about-grid {
-    grid-template-columns: 1fr;
-  }
-}
 
 /* EXPERIENCE */
 .experience-box {
@@ -218,49 +186,26 @@ h1, h2, h3 {
   border-left: 6px solid var(--accent);
   transition: 0.3s;
 }
-.experience-box h3 {
-  margin-bottom: 5px;
-}
-.experience-box span {
-  font-size: 14px;
-  opacity: 0.6;
-}
+.experience-box h3 {margin-bottom: 5px;}
+.experience-box span {font-size: 14px;opacity: 0.6;}
 .experience-box ul {
   margin-top: 15px;
   padding-left: 20px;
 }
-.experience-grid,
 .education-grid {
   max-width: 1200px;
-  margin: auto;
+  margin: 50px auto 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 28px;
 }
+
 
 /* EDUCATION */
 .cards {
   display: flex;
   justify-content: center;
   gap: 30px;
-  margin-top: 50px;
-}
-.card {
-  background: #1e293b;
-  padding: 50px;
-  width: 260px;
-  border-radius: 25px;
-  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
-  border-top: 6px solid var(--accent);
-  transition: 0.3s;
-}
-.card:hover {
-  transform: translateY(-10px);
-}
-.education-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 28px;
   margin-top: 50px;
 }
 .edu-card {
@@ -272,9 +217,7 @@ h1, h2, h3 {
   border: 1px solid var(--border-soft);
   transition: 0.3s;
 }
-.edu-card:hover {
-  transform: translateY(-8px);
-}
+.edu-card:hover {transform: translateY(-8px);}
 
 /* ICON */
 .edu-icon {
@@ -287,16 +230,11 @@ h1, h2, h3 {
   align-items: center;
   justify-content: center;
 }
-.edu-icon i {
-  font-size: 26px;
-  color: white;
-}
+.edu-icon i {font-size: 26px;color: white;}
 
 /* JUDUL */
-.edu-card h3 {
-  font-size: 20px;
-  margin-bottom: 10px;
-}
+.edu-card h3 {font-size: 20px;margin-bottom: 10px;}
+
 /* GARIS PEMISAH */
 .edu-divider {
   width: 50px;
@@ -418,3 +356,16 @@ h1, h2, h3 {
   border: 1px solid var(--border-soft);
 }
 
+@media (max-width: 768px) {
+  .hero {flex-direction: column;text-align: center;}
+  .hero-img img {width: 240px;}
+  .hero-text h1 {font-size: 40px;}
+  .about-grid {grid-template-columns: 1fr;}
+  .experience-box {padding: 30px;margin-top: 30px;}
+  .skills-container {flex-direction: column;gap: 40px;}
+  .skills-left img {width: 260px;}
+  .skills-right {width: 100%;}
+  .contact-box {padding: 35px 25px;}
+  .contact-pill {flex-direction: column;gap: 15px;}
+  .navbar ul {gap: 18px;font-size: 14px;}
+}
